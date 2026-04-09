@@ -58,7 +58,9 @@ img {
     font-display: swap;
 }
 
-
+:root {
+    --odin-gray: #f7f9fa;
+}
 
 .main.container {
     display: flex;
@@ -77,6 +79,34 @@ img {
     min-width: 30%;
     padding: 10px 0px;
 }
+.right.container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+    background-color: var(--odin-gray);
+}
+
+.right.container > .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.top.container {
+    height: 18rem;
+    flex-direction: column-reverse;
+}
+.mid.container {
+    height: 18rem;
+    background-color: white;
+}
+.bot.container {
+    height: 18rem;
+    background-color: blue;
+}
+
+
 
 .hero {
     background-color: rgba(0, 0, 0, 50%);
@@ -86,12 +116,12 @@ img {
     justify-content: center;
     gap: 20px;
 
-    margin-top: 50%;
+    margin-top: 40%;
 }
 
 .hero h1 {
     font-family: "Norse";
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     color: white;
 }
@@ -115,4 +145,9 @@ img {
 .image.credit a:hover {
     color: blue;
     background-color: rgba(0, 0, 0, 50%);
+}
+
+p.hero-text {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
