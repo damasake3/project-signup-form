@@ -101,14 +101,18 @@ img {
     margin-top: auto;
 }
 
-.right.container > div {
+.right.container > div:nth-child(1),  .right.container > div:nth-child(2){
     padding: 10px 30px;
-    
 }
 
 .mid.container {
     background-color: white;
     padding-bottom: 40px !important;
+}
+
+.bot.not-flex-container {
+    height: 300px;
+    padding: 30px;
 }
 
 .hero {
@@ -180,10 +184,12 @@ label, input {
     color: var(--odin-color-70);
     font-weight: 500;
 }
+
 label {
     text-transform: uppercase;
     font-size: 12px;
 }
+
 input {
     border: 1px solid var(--odin-color-30);
     border-radius: 5px;
@@ -194,3 +200,28 @@ input {
     margin-bottom: 10px;
 }
 
+button {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    width: 20%;
+    border-radius: 7px;
+    border: 1px solid #596D48;
+    background-color: #596D48;
+
+    font-weight: 500;
+    color: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+a.login-text {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 500;
+}
+a.login-text:hover {
+    color: green;
+}
