@@ -43,10 +43,10 @@
                         <input type="text" id="user-first-name">
 
                         <label for="user-email" name="email">Email</label>
-                        <input type="text" id="user-email">
+                        <input type="email" id="user-email">
 
                         <label for="user-password" name="password">Password</label>
-                        <input type="password" id="user-password">
+                        <input type="password" id="user-password" minLength="8" required>
                     </div>
 
                     <div class="form-column">
@@ -57,13 +57,13 @@
                         <input type="tel" id="user-phone">
 
                         <label for="confirm-password" name="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password">
+                        <input type="password" id="confirm-password" minLength="8" required>
                     </div>
 
                     <div class="form-column">
-                        x
+
                     </div>
-                </form>
+                
             </div>
             <div class="bot not-flex-container">
 
@@ -71,6 +71,8 @@
 
                 <p>Already have an account? <a href="" class="login-text">Log In</a></p>
             </div>
+
+            </form>
         </div>
     </div>
 </body>

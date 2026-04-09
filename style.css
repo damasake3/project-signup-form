@@ -60,7 +60,7 @@ img {
 
 :root {
     --odin-gray: #f7f9fa;
-    --odin-color-70: rgba(0, 0, 0, 70%); 
+    --odin-color-70: rgba(0, 0, 0, 70%);
     --odin-color-30: rgba(0, 0, 0, 30%);
 
     --very-light-border-color: #E5E7EB;
@@ -103,7 +103,8 @@ img {
     margin-top: auto;
 }
 
-.right.container > div:nth-child(1),  .right.container > div:nth-child(2){
+.right.container>div:nth-child(1),
+.right.container>div:nth-child(2) {
     padding: 10px 30px;
 }
 
@@ -133,6 +134,7 @@ img {
     font-weight: bold;
     color: white;
 }
+
 h2 {
     font-size: 1.675rem;
     font-weight: bold;
@@ -149,7 +151,7 @@ h2 {
 p.hero-text {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--odin-color-70)  ;
+    color: var(--odin-color-70);
 }
 
 .image.credit {
@@ -181,7 +183,8 @@ p.hero-text {
     padding-right: 4em;
 }
 
-label, input {
+label,
+input {
     color: var(--odin-color-70);
     font-weight: 500;
 }
@@ -224,11 +227,23 @@ button {
 button:hover {
     background-color: green;
 }
+
 a.login-text {
     color: #596D48;
     text-decoration: none;
     font-weight: 500;
 }
+
 a.login-text:hover {
     color: green;
+}
+
+#user-password:user-valid,
+#confirm-password:user-valid {
+    border-color: green;
+}
+
+#user-password:user-invalid,
+#confirm-password:user-invalid {
+    border-color: red;
 }
