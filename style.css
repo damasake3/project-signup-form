@@ -60,6 +60,10 @@ img {
 
 :root {
     --odin-gray: #f7f9fa;
+    --odin-color-70: rgba(0, 0, 0, 70%); 
+    --odin-color-30: rgba(0, 0, 0, 30%);
+
+    --very-light-border-color: #E5E7EB;
 }
 
 .main.container {
@@ -79,34 +83,38 @@ img {
     min-width: 30%;
     padding: 10px 0px;
 }
-.right.container {
-    display: flex;
-    flex-direction: column;
 
+.right.container {
     height: 100%;
     width: 100%;
     background-color: var(--odin-gray);
 }
 
-.right.container > .container {
+.top.container {
+    height: 320px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    justify-content: center;
+
+    margin-right: 28%;
 }
-.top.container {
-    height: 18rem;
-    flex-direction: column-reverse;
+
+.top.container p:first-child {
+    margin-top: auto;
 }
+
+.right.container > div:nth-child(1),  .right.container > div:nth-child(2){
+    padding: 10px 30px;
+}
+
 .mid.container {
-    height: 18rem;
     background-color: white;
 }
-.bot.container {
-    height: 18rem;
-    background-color: blue;
+
+.bot.not-flex-container {
+    height: 300px;
+    padding: 30px;
 }
-
-
 
 .hero {
     background-color: rgba(0, 0, 0, 50%);
@@ -125,10 +133,23 @@ img {
     font-weight: bold;
     color: white;
 }
+h2 {
+    font-size: 1.675rem;
+    font-weight: bold;
+    color: var(--odin-color-70);
+
+    padding-bottom: 20px;
+}
 
 .hero img {
     width: 60px;
     height: auto;
+}
+
+p.hero-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--odin-color-70)  ;
 }
 
 .image.credit {
@@ -147,7 +168,67 @@ img {
     background-color: rgba(0, 0, 0, 50%);
 }
 
-p.hero-text {
-    font-size: 1.5rem;
-    font-weight: bold;
+.form-master {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 30%;
+
+    padding-right: 4em;
+}
+
+label, input {
+    color: var(--odin-color-70);
+    font-weight: 500;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+input {
+    border: 1px solid var(--very-light-border-color);
+    border-radius: 5px;
+
+    height: 30px;
+    padding: 0px 10px;
+
+    margin-bottom: 10px;
+}
+
+input:focus-visible {
+    box-shadow: 2px 2px 3px 0px grey;
+    border-color: blue;
+    outline: 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    width: 20%;
+    border-radius: 7px;
+    border: 1px solid #596D48;
+    background-color: #596D48;
+
+    font-weight: 500;
+    color: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+a.login-text {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 500;
+}
+a.login-text:hover {
+    color: green;
 }
