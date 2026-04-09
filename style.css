@@ -62,6 +62,8 @@ img {
     --odin-gray: #f7f9fa;
     --odin-color-70: rgba(0, 0, 0, 70%); 
     --odin-color-30: rgba(0, 0, 0, 30%);
+
+    --very-light-border-color: #E5E7EB;
 }
 
 .main.container {
@@ -191,7 +193,7 @@ label {
 }
 
 input {
-    border: 1px solid var(--odin-color-30);
+    border: 1px solid var(--very-light-border-color);
     border-radius: 5px;
 
     height: 30px;
