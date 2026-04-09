@@ -1,6 +1,4 @@
-@import 'node_modules/modern-normalize/modern-normalize.css';
-
-/* Normalize */
+    /* Normalize */
 :root {
     line-height: 1.5;
 }
@@ -80,7 +78,7 @@ img {
     flex-direction: column;
 
     min-height: 100vh;
-    min-width: 30%;
+    min-width: 35%;
     padding: 10px 0px;
 }
 
@@ -91,12 +89,12 @@ img {
 }
 
 .top.container {
-    height: 320px;
+    height: 415px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    margin-right: 28%;
+    margin-right: 20%;
 }
 
 .top.container p:first-child {
@@ -130,9 +128,14 @@ img {
 
 .hero h1 {
     font-family: "Norse";
-    font-size: 5rem;
+    font-size: 8rem;
     font-weight: bold;
     color: white;
+}
+
+.hero img {
+    width: 7rem;
+    height: auto;
 }
 
 h2 {
@@ -143,10 +146,7 @@ h2 {
     padding-bottom: 20px;
 }
 
-.hero img {
-    width: 60px;
-    height: auto;
-}
+
 
 p.hero-text {
     font-size: 1.5rem;
