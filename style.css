@@ -60,6 +60,8 @@ img {
 
 :root {
     --odin-gray: #f7f9fa;
+    --odin-color-70: rgba(0, 0, 0, 70%); 
+    --odin-color-30: rgba(0, 0, 0, 30%);
 }
 
 .main.container {
@@ -106,6 +108,7 @@ img {
 
 .mid.container {
     background-color: white;
+    padding-bottom: 40px !important;
 }
 
 .hero {
@@ -125,6 +128,13 @@ img {
     font-weight: bold;
     color: white;
 }
+h2 {
+    font-size: 1.675rem;
+    font-weight: bold;
+    color: var(--odin-color-70);
+
+    padding-bottom: 20px;
+}
 
 .hero img {
     width: 60px;
@@ -134,7 +144,7 @@ img {
 p.hero-text {
     font-size: 1.5rem;
     font-weight: bold;
-    color: rgba(0, 0, 0, 80%);
+    color: var(--odin-color-70)  ;
 }
 
 .image.credit {
@@ -151,5 +161,36 @@ p.hero-text {
 .image.credit a:hover {
     color: blue;
     background-color: rgba(0, 0, 0, 50%);
+}
+
+.form-master {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 30%;
+
+    padding-right: 4em;
+}
+
+label, input {
+    color: var(--odin-color-70);
+    font-weight: 500;
+}
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+input {
+    border: 1px solid var(--odin-color-30);
+    border-radius: 5px;
+
+    height: 30px;
+    padding: 0px 10px;
+
+    margin-bottom: 10px;
 }
 
