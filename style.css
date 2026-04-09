@@ -79,34 +79,34 @@ img {
     min-width: 30%;
     padding: 10px 0px;
 }
-.right.container {
-    display: flex;
-    flex-direction: column;
 
+.right.container {
     height: 100%;
     width: 100%;
     background-color: var(--odin-gray);
 }
 
-.right.container > .container {
+.top.container {
+    height: 320px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    justify-content: center;
+
+    margin-right: 28%;
 }
-.top.container {
-    height: 18rem;
-    flex-direction: column-reverse;
+
+.top.container p:first-child {
+    margin-top: auto;
 }
+
+.right.container > div {
+    padding: 10px 30px;
+    
+}
+
 .mid.container {
-    height: 18rem;
     background-color: white;
 }
-.bot.container {
-    height: 18rem;
-    background-color: blue;
-}
-
-
 
 .hero {
     background-color: rgba(0, 0, 0, 50%);
@@ -131,6 +131,12 @@ img {
     height: auto;
 }
 
+p.hero-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 80%);
+}
+
 .image.credit {
     color: white;
     text-align: center;
@@ -147,7 +153,3 @@ img {
     background-color: rgba(0, 0, 0, 50%);
 }
 
-p.hero-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
